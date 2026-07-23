@@ -9,10 +9,10 @@ class RelationalGraph:
     # Law 1: The initial movement from A to B create the relation (the edge)
     edge = f"{point_A}->{point_B}"
     self.space_time[edge] = {"historial_mass"] += 1
-  def sediment_collision(self, edge,).
-    #Every interaction logs data, accumulating historial mass
+  def sediment_collision(self, edge):
+    # Every interaction logs data, accumulating historial mass
     self.space_time[edge]["historial_mass"] += 1
-    #Sedimentation increase local gravitational tension in the network
+    # Sedimentation increase local gravitational tension in the network
     print(f"[Infomation] Collision on {edge}. Historial mass accumulated.")
   def operate_survival_tri(self,chaos_flux):
     #Law 2: Thermodynamic filtering between Result (Order) and Waste (Chaos)
