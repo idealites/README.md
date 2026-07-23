@@ -6,16 +6,16 @@ class RelationalGraph:
     self.cohesion = 1
     self.degree_of_freedom = 1
   def initialize_movement(self, point_A, point_B):
-    # Law 1: The initial movement from A to B create the relation (the edge)
-    edge = f"{point_A}->{point_B}"
-    self.space_time[edge] = {"historial_mass"] += 1
+     # Law 1: The initial movement from A to B create the relation (the edge)
+     edge = f"{point_A}->{point_B}"
+     self.space_time[edge] = {"historial_mass"]+= 1
   def sediment_collision(self, edge):
-    # Every interaction logs data, accumulating historial mass
-    self.space_time[edge]["historial_mass"] += 1
-    # Sedimentation increase local gravitational tension in the network
+  # Every interaction logs data, accumulating historial mass
+    self.space_time[edge]["historial_mass"]+= 1
+  # Sedimentation increase local gravitational tension in the network
     print(f"[Infomation] Collision on {edge}. Historial mass accumulated.")
   def operate_survival_tri(self,chaos_flux):
-    #Law 2: Thermodynamic filtering between Result (Order) and Waste (Chaos)
+    # Law 2: Thermodynamic filtering between Result (Order) and Waste (Chaos)
     # This process creates the structural asymetry required for materialization
     result = "Internal_Structures"
     waste = "Excluded_Asymetry"
